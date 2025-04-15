@@ -6,7 +6,7 @@ RUN apk add --no-cache python3 make g++
 
 COPY package*.json tsconfig.json ./
 
-COPY ./scripts /app/scripts
+COPY scripts ./scripts
 COPY .db ./.db
 
 RUN npm install 
